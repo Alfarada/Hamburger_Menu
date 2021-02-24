@@ -1,3 +1,5 @@
+// Hamburguer menu
+
 .header {
   position: sticky; // fijando el header en la parte superior
   top: 0; // especificando el lado donde se fijará el header
@@ -19,4 +21,33 @@
   max-width: $container-width;
   min-height: 100vh; // asignando minima altura de viewport heigth de cada section
   text-align: center;
+}
+
+// .panel > .menu
+
+.menu {
+  width: inherit; // hereda la altura de su contenedor
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+
+  a {
+    padding: 2rem;
+    width: inherit;
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: $main-color;
+    transition: all 0.3s ease; 
+    // Agrega una agradable transicion al pseudo selector hover
+    
+    &:hover {
+      font-weight: bold;
+      color: $second-color;
+      background-color: $main-modal-color;
+    }
+  }
+
 }

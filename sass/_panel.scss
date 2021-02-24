@@ -1,0 +1,19 @@
+.panel {
+  position: fixed;
+  z-index: 998;
+  // posicionando en todos los margenes
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background-color: $second-modal-color;
+  transition: transform .3s ease;
+  transform: translate(-100%, 0);
+
+  &.is-active {
+    transform: translate(0, 0);
+    opacity: 1;
+    visibility: visible;
+  }
+}

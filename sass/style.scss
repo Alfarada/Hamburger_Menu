@@ -1,8 +1,9 @@
 @import '_variables';
 @import '_menu';
+@import 'button';
+@import 'panel';
 
 // Reset html
-
 html {
   box-sizing: border-box;
   font-family: $main-font;
@@ -17,7 +18,6 @@ html {
 }
 
 // Reset Body
-
 body {
   margin: 0;
   overflow-x: hidden;
