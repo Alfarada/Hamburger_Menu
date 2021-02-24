@@ -1,0 +1,22 @@
+.header {
+  position: sticky; // fijando el header en la parte superior
+  top: 0; // especificando el lado donde se fijará el header
+  padding: 1rem;
+  background-color: $main-color;
+  color: $second-color;
+  h1 {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.section {
+  padding: 2rem;
+  padding-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: $container-width;
+  min-height: 100vh; // asignando minima altura de viewport heigth de cada section
+  text-align: center;
+}
