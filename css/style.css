@@ -61,12 +61,12 @@
   left: 0;
   width: 100%;
   background-color: #222222d9;
-  transition: transform .3s ease;
+  opacity: 0;
+  transition: transform .3s ease, opacity .3s ease;
   transform: translate(-100%, 0); }
   .panel.is-active {
     transform: translate(0, 0);
-    opacity: 1;
-    visibility: visible; }
+    opacity: 1; }
 
 html {
   box-sizing: border-box;

@@ -8,12 +8,12 @@
   left: 0;
   width: 100%;
   background-color: $second-modal-color;
-  transition: transform .3s ease;
+  opacity: 0;
+  transition: transform .3s ease, opacity .3s ease;
   transform: translate(-100%, 0);
 
   &.is-active {
     transform: translate(0, 0);
     opacity: 1;
-    visibility: visible;
   }
 }
